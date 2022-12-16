@@ -1,16 +1,15 @@
 version: "3"
 services:
-  mongo:
-    image: mongo
-    ports:
-    - "27017:27017"
   backend:
-    image: docker.io/joellord/mern-k8s-back
-    depends_on:
-    - mongo 
+    image: docker.io/andresmunguia/mern-k8s-back
+    environment: 
+      - CONN_STR=mongodb+srv://mern-k8s:mern-k8s@mern-k8s.gci7rew.mongodb.net/?retryWrites=true&w=majority
+      - PORT=5000
     ports:  
-    - "5000:5000" 
+      - "5000:5000" 
   client:
-    image: docker.io/joellord/mern-k8s-front
+    image: docker.io/andresmunguia/mern-k8s-front
+    environment: 
+      - BASE_URL=http://localhost:5000
     ports:
       - "8080:80"
