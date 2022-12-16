@@ -30,6 +30,22 @@ MERN stands for Mongo-Express.js-React-Node.js, this is a 3-tier app which means
 
 For the infrastructure I used Terraform to build the VPS, main Cluster, 1 Node Group, 1 Security Group, CloudWatch integration, set availability zones and autoscaling. To deploy the pods, replica sets and services I used Kubernetes and EKS.
 
+### Tools Used:
+
+- Terraform
+- Terraform Cloud
+- Amazon CLI
+- KubeCTL
+- EKS
+- Mongo Atlas
+- Route 53
+- CloudWatch
+- GoDaddy Domain
+- Docker
+- Git
+- VScode
+- GitHub Actions
+
 ## Pipelines
 
 On the App repository I created a pipeline to build the Docker image for the frontend and backend as well and push these to Dockerhub repository everytime there is a pull from either 'main' or 'develop' branches or a pull on 'main' branch.
@@ -45,3 +61,5 @@ On my infrastructure repo I created a pipeline to execute terraform everytime th
 Infrastructure & Kubernetes:
 https://github.com/AndresMunguia/guestbook-k8s/
 '
+
+
