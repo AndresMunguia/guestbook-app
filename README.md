@@ -10,7 +10,6 @@ https://github.com/AndresMunguia/guestbook-app/
 
 Infrastructure & Kubernetes:
 https://github.com/AndresMunguia/guestbook-k8s/
-
 `
 
 ## Infrastructure Diagram
