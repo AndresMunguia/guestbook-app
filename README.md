@@ -4,7 +4,6 @@
 This project is slip in two different repositories:
 
 `
-
 App:
 https://github.com/AndresMunguia/guestbook-app/
 
