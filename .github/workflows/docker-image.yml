@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build frontend Docker image.
-      run: docker build ./front --file Dockerfile --tag mern-k8s-front:latest
+      run: docker build . --file /front/Dockerfile --tag mern-k8s-front:latest
     - name: Push frontend Docker image.
       run: docker push andresmunguia/mern-k8s-front
     - name: Build backend Docker image.
