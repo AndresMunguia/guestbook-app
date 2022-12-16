@@ -3,13 +3,13 @@
 
 This project is slip in two different repositories:
 
-`
+```
 App:
 https://github.com/AndresMunguia/guestbook-app/
 
 Infrastructure & Kubernetes:
 https://github.com/AndresMunguia/guestbook-k8s/
-`
+```
 
 ## Infrastructure Diagram
 
@@ -48,16 +48,16 @@ For the infrastructure I used Terraform to build the VPS, main Cluster, 1 Node G
 
 On the App repository I created a pipeline to build the Docker image for the frontend and backend as well and push these to Dockerhub repository everytime there is a pull from either 'main' or 'develop' branches or a pull on 'main' branch.
 
-`
+```
 App:
 https://github.com/AndresMunguia/guestbook-app/
-`
+```
 
 On my infrastructure repo I created a pipeline to execute terraform everytime there is a pull from either 'main' or 'develop' branches or a pull on 'main' branch.
 
-`
+```
 Infrastructure & Kubernetes:
 https://github.com/AndresMunguia/guestbook-k8s/
-`
+```
 
 
