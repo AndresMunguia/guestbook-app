@@ -17,10 +17,10 @@ jobs:
     - name: Build & push frontend Docker image.
       working-directory: ./front
       run: |
-            docker build . --file Dockerfile --tag mern-k8s-front:latest
+            docker build . --file Dockerfile --tag andresmunguia/mern-k8s-front:latest
             docker push andresmunguia/mern-k8s-front
     - name: Build & push backend Docker image.
       working-directory: ./back
       run: |
-            docker build . --file ./back/Dockerfile --tag mern-k8s-back:latest
+            docker build . --file ./back/Dockerfile --tag andresmunguia/mern-k8s-back:latest
             docker push andresmunguia/mern-k8s-back
